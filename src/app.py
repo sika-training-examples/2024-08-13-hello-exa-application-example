@@ -9,6 +9,7 @@ def index():
     return json.dumps({
         'message': 'Hello EXA!',
         'hostname': os.environ.get('HOSTNAME'),
+        'version': 'v0.1.0',
     })
 
 if __name__ == '__main__':
